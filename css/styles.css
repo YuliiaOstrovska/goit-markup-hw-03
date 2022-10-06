@@ -3,6 +3,7 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
+    --card-set-gap: 30px;
 }
 
 p,
@@ -19,6 +20,13 @@ ul,
 ol {
     margin: 0;
     padding-left: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.site-nav {
+    /* display: flex; */
 }
 
 .visually-hidden {
@@ -124,6 +132,7 @@ a {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     background: #F5F4FA;
+    border: 0;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -242,6 +251,38 @@ a {
 /* Portfolio page */
 .portfolio {
 }
+.container-test {
+    /* margin-right: auto;
+    margin-top: auto; */
+}
+.portfolio-btn-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 94px 0 34px;
+
+}
+.portf-btn-item {
+    padding-left: 8px;
+}
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.client-item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+    border: 1px solid #EEEEEE;
+}
+.card-content {
+    padding: 20px 24px;
+}
 .client {
     font-weight: 700;
     font-size: 18px;
@@ -253,8 +294,11 @@ a {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    margin-top: 4px;
 }
+
+
 
 
 /* Footer */
