@@ -48,7 +48,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .site-body {
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 }
 .container {
     width: 1200px;
@@ -114,9 +114,6 @@ body {
 
 }
 
-.contacts-list {
-
-}
 .contacts .contacts-list + .contacts-list {
     margin-left: 50px;
 }
@@ -347,7 +344,7 @@ a {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--title-text-color)
+    color: var(--title-text-color);
 }
 .work-type {
 
@@ -368,8 +365,6 @@ a {
 .footer-logo {
     display: inline-block;
     margin-bottom: 20px;
-}
-.footer-list {
 }
 .footer-nav .footer-list + .footer-list {
     margin-top: 9px;
