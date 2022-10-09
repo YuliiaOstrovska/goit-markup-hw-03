@@ -5,6 +5,7 @@
     --primary-white-color: #ffffff;
     --card-set-gap: 30px;
 }
+
 /* Reset */
 p,
 h1,
@@ -21,12 +22,14 @@ ol {
     margin: 0;
     padding-left: 0;
 }
+
 /* Utility */
 img {
     display: block;
     max-width: 100%;
     height: auto
 }
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -39,6 +42,7 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
+
 /* Universal selectors (Універсальні селектори) */
 * {
     box-sizing: border-box;
@@ -47,9 +51,11 @@ img {
 body {
     font-family: 'Roboto', sans-serif;
 }
+
 .site-body {
     color: var(--primary-text-color);
 }
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -57,52 +63,65 @@ body {
     margin: 0 auto;
     /* outline: 2px solid red; */
 }
+
 /* Main nav */
+.main-nav {
+    display: flex;
+    justify-content: center;
+}
 .nav {
     display: flex;
     align-items: center;
     height: 80px;
-    border-bottom: 1px solid#ECECEC;
+    /* border-bottom: 1px solid#ECECEC; */
 }
+
 /* Header */
 .header {
-    /* padding-top: 24px;
-    padding-bottom: 25px; */
-    /* margin-bottom: 94px; */
+    border-bottom: 1px solid #ECECEC;
 }
+
 /* Site logo */
 .site-logo {
     display: flex;
+    align-items: center;
 }
+
 .logo-web {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
 }
+
 .logo-studio {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #000000;
 }
+
 /* Site nav */
 .site-nav {
     display: flex;
     margin-left: 93px;
 }
+
 .site-nav .site-nav-item:not(:first-child) {
     margin-left: 50px;
 }
 
 .site-nav-item {
     display: block;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
 }
-.site-nav-item .link{
+
+.site-nav-item .link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -111,12 +130,14 @@ body {
 .contacts {
     display: flex;
     margin-left: auto;
+    align-items: center;
 
 }
 
-.contacts .contacts-list + .contacts-list {
+.contacts .contacts-list+.contacts-list {
     margin-left: 50px;
 }
+
 .link {
     font-weight: 500;
     font-size: 14px;
@@ -133,6 +154,7 @@ body {
     color: var(--primary-text-color);
     cursor: pointer;
 }
+
 .link:hover,
 .link:focus {
     color: var(--accent-color);
@@ -141,14 +163,17 @@ body {
 .site-nav .link.current {
     color: var(--accent-color);
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
 /* Button */
 .button {
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -162,6 +187,8 @@ a {
     background-color: var(--accent-color);
 }
 .portfolio-btn {
+    padding: 6px 22px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -207,6 +234,7 @@ a {
     
 }
 .btn-hero {
+    padding: 10px 32px;
     display: block;
     margin: 0 auto;
     margin-top: 30px;
@@ -218,6 +246,14 @@ a {
 .feachures-list {
     display: flex;
 }
+.feachures-item {
+    width: 270px;
+    
+}
+.feachures-list .features-item +.features-item {
+    margin-left: 30px;
+}
+
 .feachures-name {
     margin-bottom: 10px;
 
@@ -227,7 +263,6 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
-    
 }
 .feachures-dsr {
     font-size: 14px;
@@ -300,6 +335,8 @@ a {
 /* Portfolio page */
 .portfolio {
     padding-bottom: 94px;
+    padding-top: 94px;
+
 }
 .portfolio-nav {
     margin-bottom: 34px;
@@ -308,8 +345,8 @@ a {
 .portfolio-btn-list {
     display: flex;
     justify-content: center;
-    margin: 50px;
-    padding: 6px 22px;
+    /* margin: 50px; */
+    
     list-style: none;
 }
 .portfolio-btn-list .portf-btn-item:not(:first-child) {
@@ -335,9 +372,7 @@ a {
 .card-contant {
     padding: 20px 24px;
 }
-.card-img {
-    margin-bottom: 20px;
-}
+
 .client {
     margin-bottom: 4px;
     font-weight: 700;
